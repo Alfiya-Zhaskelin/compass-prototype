@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="logo">🧭 Compass</div>
+            <div class="nav-links">
+                <a href="#" class="active" data-page="map">Карта</a>
+                <a href="#" data-page="communities">Сообщества</a>
+                <a href="#" data-page="profile">Профиль</a>
+            </div>
+        </nav>
+
+        <main id="content">
+            <div id="map-page" class="page active">
+                <h1>События рядом с вами</h1>
+                <div id="map" style="height: 400px; width: 100%;"></div>
+                <div id="events-list"></div>
+            </div>
+            
+            <div id="communities-page" class="page">
+                <h1>Сообщества</h1>
+                <div id="rooms-list"></div>
+            </div>
+            
+            <div id="profile-page" class="page">
+                <h1>Мой профиль</h1>
+                <div id="user-info"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
